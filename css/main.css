@@ -12379,4 +12379,7 @@ input:focus {
   .featured-section .featured-sale .sale-holder .sale-item-title {
     font-size: 20px;
   }
+  .featured-section .featured-sale .sale-holder .sale-images {
+    right: -140px;
+  }
 }
