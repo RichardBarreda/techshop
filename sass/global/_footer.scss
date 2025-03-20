@@ -1,0 +1,149 @@
+.custom-footer {
+    padding: 30px 0px;
+
+    .category-group {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        // grid-auto-rows: 300px; /* Sets the height of each row to 150px */
+        gap: 20px; /* Optional: Adds space between grid items */
+        margin-top: 20px;
+        margin-bottom: 30px;
+
+        .category-items {
+            .category-title {
+                font-size: 17px;
+                font-weight: 500;
+                margin-bottom: 10px;
+            }
+
+            .category-text {
+                color: #757575;
+                font-size: 16px;
+
+                &:hover {
+                    cursor: pointer;
+                    color: black;
+                }
+            }
+        }
+    }
+
+    .lower-header {
+        .payment-group {
+            display: flex;
+            justify-content: space-between;
+            border-top: solid 1px gainsboro;
+            border-bottom: solid 1px gainsboro;
+            padding: 15px 0px;
+
+            .payment-holder {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .payment-label {
+                    font-size: 15px;
+                    font-weight: 500;
+                    margin-right: 10px;
+                }
+
+                .payment-icon {
+                    width: 45px;
+                    margin-left: 10px;
+                }
+
+                .payment-btn {
+                    width: 130px;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+
+    .credits-part {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0px;
+        font-size: 15px;
+        color: gray;
+        align-items: center;
+
+        .social-media {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .social-icons {
+                font-size: 20px;
+                margin-left: 10px;
+                border: solid 1px gray;
+                padding: 3px;
+                border-radius: 7px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .custom-footer {
+        .category-group {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .lower-header {
+            .payment-group {
+                flex-direction: column;
+
+                .payment-holder {
+                    &:first-child {
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+        }
+
+        .credits-part {
+            flex-direction: column;
+
+            .credits-text {
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .custom-footer {
+        .category-group {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .lower-header {
+            .payment-group {
+                flex-direction: column;
+
+                .payment-holder {
+                    .payment-label {
+                        display: none;
+                    }
+
+                    &:first-child {
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+        }
+
+        .credits-part {
+            flex-direction: column;
+
+            .credits-text {
+                margin-bottom: 15px;
+                text-align: center;
+            }
+        }
+    }
+}

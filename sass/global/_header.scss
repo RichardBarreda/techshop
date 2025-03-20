@@ -1,0 +1,133 @@
+.header {
+    margin-top: 20px;
+    border-bottom: solid 1px gainsboro;
+    padding-bottom: 25px;
+
+    .custom-container {
+        display: flex;
+        flex-direction: column;
+
+        .upper-header {
+            display: flex;    
+            justify-content: space-between;
+            align-items: center;
+
+            .upper-container {
+                display: flex;
+                align-items: center;
+            }
+
+            .logo-container {
+                .shop-logo {
+                    width: 100%; /* or any specific width you want */
+                    max-width: 35px; /* optional, to limit the maximum width */
+                    margin-right: 5px;
+                }
+
+                .logo-text {
+                    font-size: 28px;
+                    font-weight: 600;
+                    font-family: monospace;
+                }
+            }
+
+            .search-container {
+                .input-custom-group {
+                    display: flex;
+                    width: 400px;
+                    max-width: 100%;
+                    border: solid 1px #a9a9a9;
+                    padding: 3px;
+                    border-radius: 5px;
+
+                    .custom-input-text {
+                        padding: 3px;
+                        width: 100%;
+                        border: none;
+                        // max-width: 400px;
+                    }
+
+                    .custom-search-btn {
+                        background-color: white;
+                        border: none;
+                    }
+                }
+
+                .location-btn {
+                    margin-left: 10px;
+                    background: white;
+                    border: solid 1px #a9a9a9;
+                    color: #474747;
+                    font-size: 16px;
+                    padding: 5px 15px;
+                    border-radius: 5px; 
+                    
+                    &:hover {
+                        background-color: #a9a9a9;
+                        color: white;
+                    }
+                }
+            }
+
+            .cart-container {
+                font-size: 20px;
+
+                .icon-holder {
+                    padding: 0px 8px;
+                }
+            }
+        }
+
+        .lower-header {
+            margin-top: 20px;
+
+            .link-container {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+
+                .header-product-btn {
+                    border: none;
+                    background-color: #9733ff;
+                    color: white;
+                    padding: 5px 20px;
+                    border-radius: 5px;
+
+                    .fa-bars {
+                        margin-right: 5px;
+                    }
+    
+                }
+
+                .link-text {
+                    margin-left: 20px;
+                    text-decoration: none;
+                    color: #757575;
+
+                    &:hover {
+                        cursor: pointer;
+                        color: #9733ff;
+                    }
+                }
+            }
+        }
+    }   
+}
+
+@media screen and (max-width: 991px) {
+    .header {
+        .custom-container {
+            .upper-header {
+                .search-container {
+                    display: none;
+                }
+            }
+
+            .lower-header {
+                display: none;
+            }
+        }
+    }
+}
+

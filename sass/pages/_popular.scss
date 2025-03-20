@@ -1,0 +1,109 @@
+.popular-section {
+    padding: 30px 0px;
+    
+    .section-title {
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    .popular-group {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-auto-rows: 300px; /* Sets the height of each row to 150px */
+        gap: 20px; /* Optional: Adds space between grid items */
+        margin-top: 20px;
+
+        .popular-item {
+            background-color: white;
+            border: solid 1px #c5c5c5;
+            border-radius: 5px;
+            padding: 20px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+
+            &:hover {
+                border: solid 1px #9733ff;
+                background-color: #9733ff0f;
+            }
+
+            .tag-badge {
+                font-size: 12px;
+                color: white;
+                background-color: #fd3535;
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                padding: 0px 5px;
+                border-radius: 10px;
+            }
+
+            .item-image {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .featured-images {
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover;
+                    max-width: 130px;
+                }
+            }
+
+            .item-details {
+              .item-category {
+                font-size: 12px;
+                color: gray;
+              }  
+
+              .item-name {
+                font-size: 16px;
+                line-height: 18px;
+              }
+            }
+
+            .item-cart {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+// @media (min-width: 992px) and (max-width: 1199.98px) {
+    
+// }
+
+@media only screen and (max-width: 1199.98px) {
+    .popular-section {
+        .popular-group {
+            grid-template-columns: repeat(4, 1fr);
+        }
+        
+        .purple-btn {
+            font-size: 12px;
+            padding: 5px 10px;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .popular-section {
+        .popular-group {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .popular-section {
+        .popular-group {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}

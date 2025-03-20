@@ -1,0 +1,31 @@
+p {
+    margin: 0;
+}
+
+input:focus {
+    outline: none;
+  }
+
+.purple-btn {
+    border: none;
+    background-color: #6c4891;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 767px) {
+    .mobile-text {
+        font-size: 14px!important;
+    }
+    
+    .mobile-title {
+        font-size: 16px!important;
+    }
+
+    .section-title-mobile {
+        font-size: 20px!important;
+        text-align: center;
+    }
+}
+

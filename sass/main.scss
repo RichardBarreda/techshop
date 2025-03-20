@@ -1,0 +1,15 @@
+@use "../node_modules/bootstrap/scss/bootstrap";
+
+@import
+  'global/global',
+  'global/header',
+  'global/footer';
+
+@import
+  'pages/home',
+  'pages/heroBanner',
+  'pages/popular',
+  'pages/whyShop',
+  'pages/featured';
+
+
